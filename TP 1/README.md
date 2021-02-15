@@ -27,9 +27,9 @@ des vases.
 Nous obtenons donc pour chaque vase ainsi que pour la somme du contenu des vases:
 
 alpha_initial | alpha_initial + 0.05 (modifiable) | ... | alpha_final 
---------------|-----------------------------------|-----|------------
+:--------------:|:-----------------------------------:|:-----:|:------------:
    Valeur 1   |              Valeur 1             | ... |  Valeur 1
-      ..      |                ..                 | ... |    ..
+    jusqu'à   |               jusqu'à             | ... |   jusqu'à
    Valeur N   |              Valeur N             | ... |  Valeur N
    
 Un script gnuplot est ensuite employé en fin de programme pour afficher 4 graphes : un par vase ainsi qu'un pour la somme du contenu des vases
