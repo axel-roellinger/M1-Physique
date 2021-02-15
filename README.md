@@ -44,5 +44,18 @@ Une approximation possible est de scinder l'aire concernée en une multitude de 
 
 La formule employée pour décrire l'algorithme est la suivante :
 <p align=center>
-   <img src ="https://github.com/axel-roellinger/M1-Physique/blob/main/Images/integration-riemann.svg">
+   <img src ="https://github.com/axel-roellinger/M1-Physique/blob/main/Images/integrale-riemann.svg">
 </p>
+
+Ici h représente la largeur de notre rectangle. Ceci nous sert donc de pas d'intégration, qui sera la valeur déterminante quant à la précision de notre valeur.
+h est déterminée comme étant : (borne finale - borne initiale)/ nombre d'itérations.
+
+Pour clarifier le calcul, on peut sortir h de la somme par factorisation de tous les termes selon h et multiplier uniquement la somme finale par ce pas.
+
+L'implémentation se fait via une boucle itérative, dans laquelle on invoque une fonction fx avec comme argument un double, qui représente notre f(a + i x h).
+Une fois que ce double poss
+
+Pour ce qui est de la complexité temporelle : 
+   - implémenter cette formule revenant à créer une boucle itérative comportant une somme sur une variable
+   - on observe alors une linéarité dans le nombre d'opérations requises
+   - la complexité est donc O(N), avec N le nombre de boucles requises
