@@ -28,9 +28,9 @@ Nous obtenons donc pour chaque vase ainsi que pour la somme du contenu des vases
 
 | alpha_initial  |        alpha_initial + 0.05         |  ...  |  alpha_final |
 |:--------------:|:-----------------------------------:|:-----:|:------------:|
-    Valeur 1     |              Valeur 1               |  ...  |   Valeur 1   |
-     ...      |               ...                 | ... |    ...    |
-   Valeur N   |              Valeur N             | ... |  Valeur N |
+|    Valeur 1    |              Valeur 1               |  ...  |   Valeur 1   |
+|       ...      |               ...                   |  ...  |      ...     |
+|    Valeur N    |              Valeur N               |  ...  |   Valeur N   |
    
 Un script gnuplot est ensuite employé en fin de programme pour afficher 4 graphes : un par vase ainsi qu'un pour la somme du contenu des vases
 
@@ -42,5 +42,3 @@ Soit f(x) une fonction que l'on souhaite intégrer. L'intégration, d'un point d
 et les bornes d'intégration. 
 Une approximation possible est de scinder l'aire concernée en une multitude de rectangles. Un peu à la manière de l'anti-aliasing dans un jeu vidéo : on approxime n'importe quelle courbe pas un escalier, plus ou moins raffiné.
 La formule employée pour décrire l'algorithme est la suivante :
-
-    $$\sum^N_{i=0} h \times f(a + i \times b)$$
