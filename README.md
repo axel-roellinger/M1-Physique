@@ -40,5 +40,9 @@ L'intégration de Riemann est considérée comme telle :
 
 Soit f(x) une fonction que l'on souhaite intégrer. L'intégration, d'un point de vue géométrique, correspond au calcul de l'aire entre l'axe des abscisses, la fonction f(x) 
 et les bornes d'intégration. 
-Une approximation possible est de scinder l'aire concernée en une multitude de rectangles. Un peu à la manière de l'anti-aliasing dans un jeu vidéo : on approxime n'importe quelle courbe pas un escalier, plus ou moins raffiné.
+Une approximation possible est de scinder l'aire concernée en une multitude de rectangles. Un peu à la manière de l'anti-aliasing dans un jeu vidéo : on approxime une courbe ou une pente par un escalier, plus ou moins détaillé.
+
 La formule employée pour décrire l'algorithme est la suivante :
+
+!<img src ="https://github.com/axel-roellinger/M1-Physique/blob/main/Images/integration-riemann.svg">
+
