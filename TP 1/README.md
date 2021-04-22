@@ -65,6 +65,9 @@ Cet algorithme s'inscrit dans la continuité du travail sur l'intégration de Ri
 De là, une formule est à appliquer pour remplir les éléments suivants du tableau, suivant une diagonale :
 
 | Riemann pour h = h | Riemann pour h = h/2 | Riemann pour h = h/4 | Riemann pour h = h/8 |
+|:------------------:|:--------------------:|:--------------------:|:---------------------|
 |    Valeur 1        |       Valeur 2       |       Valeur 3       |         Vide         |
+|:------------------:|:--------------------:|:--------------------:|:---------------------|
 |    Valeur 4        |       Valeur 5       |         Vide         |         Vide         |
+|:------------------:|:--------------------:|:--------------------:|:---------------------|
 |    Valeur 6        |        Vide          |         Vide         |         Vide         |
