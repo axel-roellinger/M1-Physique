@@ -71,7 +71,6 @@ De là, une formule est à appliquer pour remplir les éléments suivants du tab
 |      Valeur 4      |       Valeur 5       |         Vide         |         Vide         |
 |      Valeur 6      |        Vide          |         Vide         |         Vide         |
 
+Les valeurs intitulées "valeur [1-6]" sont obtenues à l'aide de la formule suivante : 
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| Foo         | Bar         |
+La valeur 6, dernière valeur calculée par l'algorithme, représente la valeur finale de l'intégrale issue de ce calcul. L'objectif a donc été de savoir quel était le 
