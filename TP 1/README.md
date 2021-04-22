@@ -73,4 +73,6 @@ De là, une formule est à appliquer pour remplir les éléments suivants du tab
 
 Les valeurs intitulées "valeur [1-6]" sont obtenues à l'aide de la formule suivante : 
 
+![image](https://user-images.githubusercontent.com/73199800/115788797-677b8d80-a3c4-11eb-8287-5efb27f34c7c.png)
+
 La valeur 6, dernière valeur calculée par l'algorithme, représente la valeur finale de l'intégrale issue de ce calcul. L'objectif a donc été de savoir quel était le 
