@@ -64,7 +64,7 @@ Pour ce qui est de la complexité temporelle :
 Cet algorithme s'inscrit dans la continuité du travail sur l'intégration de Riemann. Son principe est le suivant : On exploite l'algorithme d'intégration de Riemann pour 4 pas différents. Le premier pas est défini comme h/(2^0) = h. Le pas suivant est égal à h/2, le prochain à h/4 et le dernier à h/8. Ces 4 valeurs d'intégrales sont compilées dans un tableau de taille 4 x 4.
 De là, une formule est à appliquer pour remplir les éléments suivants du tableau, suivant une diagonale :
 
-|      <!-- -->      |       <!---->        |       <!---->        |       <!---->        |
+|     y <!-- -->      |       <!---->        |       <!---->        |       <!---->        |
 |--------------------|----------------------|----------------------|----------------------|
 | Riemann pour h = h | Riemann pour h = h/2 | Riemann pour h = h/4 | Riemann pour h = h/8 |
 |      Valeur 1      |       Valeur 2       |       Valeur 3       |         Vide         |
@@ -72,7 +72,12 @@ De là, une formule est à appliquer pour remplir les éléments suivants du tab
 |      Valeur 6      |        Vide          |         Vide         |         Vide         |
 
 Les valeurs intitulées "valeur [1-6]" sont obtenues à l'aide de la formule suivante : 
-
+<p align="center">
 ![image](https://user-images.githubusercontent.com/73199800/115788797-677b8d80-a3c4-11eb-8287-5efb27f34c7c.png)
+</p>
+
+L'indice j correspond à la ligne du tableau, et l'indice k la colonne. on voit ainsi que chaque bloc du tableau est obtenu en utilisant le bloc au-dessus de lui de coordonnées [j][k], ainsi que celui au-dessus dans la colonne à côté, de coordonnées [j][k+1].
+
+Il faut tout de même noter que la valeur j = 1 n'est pas permise, ou le dénominateur vaudra 0. De ce fait, il faut considérer un offset de 1 lors de l'utilisation de cette formule. À ce moment-là, on désignera la ligne au-dessus de la ligne de calcul par j-1.
 
 La valeur 6, dernière valeur calculée par l'algorithme, représente la valeur finale de l'intégrale issue de ce calcul. L'objectif a donc été de savoir quel était le 
