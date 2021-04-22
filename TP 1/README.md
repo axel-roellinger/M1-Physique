@@ -64,6 +64,8 @@ Pour ce qui est de la complexité temporelle :
 Cet algorithme s'inscrit dans la continuité du travail sur l'intégration de Riemann. Son principe est le suivant : On exploite l'algorithme d'intégration de Riemann pour 4 pas différents. Le premier pas est défini comme h/(2^0) = h. Le pas suivant est égal à h/2, le prochain à h/4 et le dernier à h/8. Ces 4 valeurs d'intégrales sont compilées dans un tableau de taille 4 x 4.
 De là, une formule est à appliquer pour remplir les éléments suivants du tableau, suivant une diagonale :
 
+|      <!-- -->      |       <!---->        |       <!---->        |       <!---->        |
+|--------------------|----------------------|----------------------|----------------------|
 | Riemann pour h = h | Riemann pour h = h/2 | Riemann pour h = h/4 | Riemann pour h = h/8 |
 |      Valeur 1      |       Valeur 2       |       Valeur 3       |         Vide         |
 |      Valeur 4      |       Valeur 5       |         Vide         |         Vide         |
