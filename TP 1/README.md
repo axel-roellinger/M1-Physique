@@ -53,10 +53,13 @@ h est déterminée comme étant : (borne finale - borne initiale)/ nombre d'ité
 Pour clarifier le calcul, on peut sortir h de la somme par factorisation de tous les termes selon h et multiplier uniquement la somme finale par ce pas.
 
 L'implémentation se fait via une boucle itérative, dans laquelle on invoque une fonction fx avec comme argument un double, qui représente notre f(a + i x h).
-Une fois que ce double poss
 
 Pour ce qui est de la complexité temporelle : 
    - implémenter cette formule revenant à créer une boucle itérative comportant une somme sur une variable
-   - on observe alors une linéarité dans le nombre d'opérations requises
+   - on observe alors une linéarité dans le nombre d'opérations requises (un pas = une itération)
    - la complexité est donc O(N), avec N le nombre de pas
-![image](https://user-images.githubusercontent.com/73199800/115722429-48a6d800-a37f-11eb-92b6-63309ac70ab4.png)
+
+3. Convergence accélérée de Richardson
+
+Cet algorithme s'inscrit dans la continuité du travail sur l'intégration de Riemann. Son principe est le suivant : On exploite l'algorithme d'intégration de Riemann pour 4 pas différents. Le premier pas est défini comme h/(2^0) = h. Le pas suivant est égal à h/2, le prochain à h/4 et le dernier à h/8. Ces 4 valeurs d'intégrales sont compilées dans un tableau de taille 4 x 4.
+De là, une formule est à appliquer pour remplir les éléments suivants du tableau, suivant une diagonale :
