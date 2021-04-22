@@ -58,4 +58,5 @@ Une fois que ce double poss
 Pour ce qui est de la complexité temporelle : 
    - implémenter cette formule revenant à créer une boucle itérative comportant une somme sur une variable
    - on observe alors une linéarité dans le nombre d'opérations requises
-   - la complexité est donc O(N), avec N le nombre de boucles requises
+   - la complexité est donc O(N), avec N le nombre de pas
+![image](https://user-images.githubusercontent.com/73199800/115722429-48a6d800-a37f-11eb-92b6-63309ac70ab4.png)
