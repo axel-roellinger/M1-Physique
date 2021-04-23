@@ -25,13 +25,13 @@ Ceci nous permet d'employer cette valeur pour la légende des graphes à venir p
 des vases.
 
 Nous obtenons donc pour chaque vase ainsi que pour la somme du contenu des vases:
-<p align="center">
+
 | alpha_initial  |        alpha_initial + 0.05         |  ...  |  alpha_final |
 |:--------------:|:-----------------------------------:|:-----:|:------------:|
 |    Valeur 1    |              Valeur 1               |  ...  |   Valeur 1   |
 |       ...      |               ...                   |  ...  |      ...     |
 |    Valeur N    |              Valeur N               |  ...  |   Valeur N   |
- </p>
+
 Un script gnuplot est ensuite employé en fin de programme pour afficher 4 graphes : un par vase ainsi qu'un pour la somme du contenu des vases
 
 2. Intégration de Riemann
