@@ -75,7 +75,7 @@ De là, une formule est à appliquer pour remplir les éléments suivants du tab
 
 Les valeurs intitulées "valeur [1-6]" sont obtenues à l'aide de la formule suivante : 
 <p align="center">
-![image](https://user-images.githubusercontent.com/73199800/115788797-677b8d80-a3c4-11eb-8287-5efb27f34c7c.png)
+<img src="https://user-images.githubusercontent.com/73199800/115788797-677b8d80-a3c4-11eb-8287-5efb27f34c7c.png">
 </p>
 
 L'indice j correspond à la ligne du tableau, et l'indice k la colonne. on voit ainsi que chaque bloc du tableau est obtenu en utilisant le bloc au-dessus de lui de coordonnées [j][k], ainsi que celui au-dessus dans la colonne à côté, de coordonnées [j][k+1].
