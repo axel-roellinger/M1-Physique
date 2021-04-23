@@ -59,12 +59,14 @@ Pour ce qui est de la complexité temporelle :
    - on observe alors une linéarité dans le nombre d'opérations requises (un pas = une itération)
    - la complexité est donc O(N), avec N le nombre de pas
 
+Concernant l'emplacement mémoire, cette méthode nécessite N\*32 bits au minimum en cas d'utilisation de floats pour stocker les résultats, jusqu'à N\*64 bits en cas d'utilisation de doubles.
+
 3. Convergence accélérée de Richardson
 
 Cet algorithme s'inscrit dans la continuité du travail sur l'intégration de Riemann. Son principe est le suivant : On exploite l'algorithme d'intégration de Riemann pour 4 pas différents. Le premier pas est défini comme h/(2^0) = h. Le pas suivant est égal à h/2, le prochain à h/4 et le dernier à h/8. Ces 4 valeurs d'intégrales sont compilées dans un tableau de taille 4 x 4.
 De là, une formule est à appliquer pour remplir les éléments suivants du tableau, suivant une diagonale :
 
-|     y <!-- -->      |       <!---->        |       <!---->        |       <!---->        |
+|      <!-- -->      |       <!---->        |       <!---->        |       <!---->        |
 |--------------------|----------------------|----------------------|----------------------|
 | Riemann pour h = h | Riemann pour h = h/2 | Riemann pour h = h/4 | Riemann pour h = h/8 |
 |      Valeur 1      |       Valeur 2       |       Valeur 3       |         Vide         |
@@ -80,4 +82,8 @@ L'indice j correspond à la ligne du tableau, et l'indice k la colonne. on voit 
 
 Il faut tout de même noter que la valeur j = 1 n'est pas permise, ou le dénominateur vaudra 0. De ce fait, il faut considérer un offset de 1 lors de l'utilisation de cette formule. À ce moment-là, on désignera la ligne au-dessus de la ligne de calcul par j-1.
 
-La valeur 6, dernière valeur calculée par l'algorithme, représente la valeur finale de l'intégrale issue de ce calcul. L'objectif a donc été de savoir quel était le 
+La valeur 6, dernière valeur calculée par l'algorithme, représente la valeur finale de l'intégrale issue de ce calcul. L'objectif a donc été de comparer la précision de l'intégration de Riemann et celle de cet algorithme, pour déterminer si le gain de temps est profitable ou non.
+
+Pour cela, j'ai analysé les résultats contenus dans la table en étudiant l'erreur entre chaque valeur de cette dernière et la valeur réelle de l'intégrale. J'en suis parvenu à la conclusion qu'il était rarement nécessaire de calculer les valeurs au-delà de la 2è ligne pour obtenir une erreur plus faible que 0.1%.
+
+Également, en supposant l'intervalle d'intégration égal à [0,25], et un nombre de subdivisions initial de subdivisions h = 100 pour exploiter l'algorithme de convergence, mes résultats ont montré qu'il fallait une intégrale Riemannienne comprenant environ 160000 subdivisions pour obtenir un taux de précision de 0.1%. Or, considérant h, il aura fallu 4 intégrales riemanniennes de 100, 200, 400 et 800 subdivisions, pour obtenir le même taux de précision (les calculs suivant étant négligeables en terme d'espace mémoire) à l'aide de l'algorithme de Richardson. On peut donc en conclure que celui-ci est une alternative plus qu'intéressante à l'intégrale de Riemann, tant en terme de mémoire que de temps de calcul.
