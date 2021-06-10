@@ -31,7 +31,7 @@ Cependant, aucun pattern n'est reconnaissable pour la fonction g(x), possiblemen
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/73199800/121446583-1b94a000-c994-11eb-895c-6fb37bd46a2b.png">
-  Ce graphe représente l'évolution de l'erreur en fonction de la valeur de N.
+  <br/>Ce graphe représente l'évolution de l'erreur en fonction de la valeur de N.
 </p>
 
 Concernant la complexité temporelle de cette méthode, cette dernière est linéaire. En effet, elle ne dépend que de la taille de l'échantillon initial.
