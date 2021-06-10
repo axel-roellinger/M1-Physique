@@ -39,7 +39,7 @@ Pour distinguer les bons points des mauvais, j'ai créé une fonction de tri, qu
 points générés. Dans un couple (x,y), si y est inférieur à f(x), alors le point est considéré comme valide.
 
 Ensuite, l'objectif est de comparer cette méthode de calcul à l'intégration de Riemann, et de l'étudier pour différentes 
-fonctions données. Un tableau récapitulatif est disponible à la page 10 du document <a href="https://github.com/axel-roellinger/M1-Physique/blob/main/Rapport%20TP%201%20%C3%A0%203.pdf">Rapport TP 1 à 3.pdf</a>*
+fonctions données. Un tableau récapitulatif est disponible à la page 10 du document <a href="https://github.com/axel-roellinger/M1-Physique/blob/main/Rapport%20TP%201%20%C3%A0%203.pdf">Rapport TP 1 à 3.pdf</a>.
 
 Concernant la complexité de cette méthode de calcul, elle est linéaire vis-à-vis du nombre de points aléatoires à calculer. 
 Pour l'occupation en mémoire, le point qui serait à optimiser serait de ne pas recueillir tous les points aléatoires dans un tableau, mais d'étudier directement 
