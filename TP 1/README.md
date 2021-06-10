@@ -42,11 +42,6 @@ Soit f(x) une fonction que l'on souhaite intégrer. L'intégration, d'un point d
 et les bornes d'intégration. 
 Une approximation possible est de scinder l'aire concernée en une multitude de rectangles. Un peu à la manière de l'anti-aliasing dans un jeu vidéo : on approxime une courbe ou une pente par un escalier, plus ou moins détaillé.
 
-La formule employée pour décrire l'algorithme est la suivante :
-<p align=center>
-   <img src ="https://github.com/axel-roellinger/M1-Physique/blob/main/Images/integrale-riemann.svg">
-</p>
-
 Ici h représente la largeur de notre rectangle. Ceci nous sert donc de pas d'intégration, qui sera la valeur déterminante quant à la précision de notre valeur.
 h est déterminée comme étant : (borne finale - borne initiale)/ nombre d'itérations.
 
